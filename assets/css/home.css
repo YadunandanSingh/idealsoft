@@ -1,0 +1,463 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+   
+}
+
+body{
+    font-family: "Libre Franklin", sans-serif;
+}
+.headcontainer nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+.headerUL{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+.headerUL li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+.headerUL li a:hover{
+    font-weight: 800;
+    color: rgb(73, 61, 61);
+}
+
+
+.carousel-inner{
+    height: 90vh;
+}
+
+.sec2_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hoverCard svg {
+    height: 25px;
+  }
+  
+  .hoverCard {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7e7e7;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+  }
+  
+  .hoverCard::before, .hoverCard::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    transition: 0.25s linear;
+    z-index: 1;
+  }
+  
+  .hoverCard::before {
+    content: "";
+    left: 0;
+    justify-content: flex-end;
+    background-color: #f4e9da;
+  }
+  
+  .hoverCard::after {
+    content: "";
+    right: 0;
+    justify-content: flex-start;
+    background-color: #f4e9da;
+  }
+  
+  .hoverCard:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .hoverCard:hover span {
+    opacity: 0;
+    z-index: -3;
+  }
+  
+  .hoverCard:hover::before {
+    opacity: 0.5;
+    transform: translateY(-100%);
+  }
+  
+  .hoverCard:hover::after {
+    opacity: 0.5;
+    transform: translateY(100%);
+  }
+  
+  .hoverCard span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-family: 'Fira Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+  }
+  
+
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+.contactSec{
+    background-color: lightblue;
+    color: white;
+    font-weight: 800;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 50%;
+    transition: all ease-in-out .5s;
+    /* margin-right: 0; */
+    margin-left: 25%;
+
+  }
+  
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  
+  .search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: .1em;
+    position: relative;
+    right: 270px;
+  }
+  
+  .search__button:hover {
+    cursor: pointer;
+  }
+  
+  .search__icon {
+    height: 1.5em;
+    width: 1.5em;
+    fill: #b4b4b4;
+    position: relative;
+    right: 17px;
+    /* top: 100px; */
+  }
+  .services{
+    background-color: #dfe1fc;
+  }
+  .ServiceCard{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+   
+    overflow: hidden;
+    transition: all 0.1s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .ServiceCard:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    opacity: 0.9;
+    color: white;
+    
+  }
+  .serviceSVG{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(216, 215, 215);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ServicePera{
+    font-weight: 500;
+    color: #57c22c;
+  }
+
+  .Performance{
+    padding-top: 50px;
+    background-color: #fdf3d5;
+  }
+  .PerformanceIMG{
+    height: 62vh;
+    border-radius: 10px;
+  }
+  .PerformanceCard:hover{
+    background: linear-gradient(-45deg, #3854f3 0%, #ff0f7b 100%);
+    color: white;
+  }
+  .userSay{
+    padding-top: 50px;
+    background-color: #fae4c9;
+  }
+  .profileCard {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .profileCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #000000;
+    background-color: #f2f2f2;
+    color: #ffffff;
+  }
+  
+  .card__content {
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(-45deg, #eecf6a 0%, #0f6fff 100%);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .profileCard:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+  }
+  
+  .profileCard:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.4;
+  }
+
+  .readmore-btn {
+    width: fit-contentd;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(186, 125, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 0px 15px;
+    gap: 0px;
+    transition: all 0.4s;
+  }
+  .book-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 45px;
+    height: 100%;
+  }
+  .book-wrapper .book-page {
+    width: 50%;
+    height: auto;
+    position: absolute;
+  }
+  .readmore-btn:hover .book-page {
+    animation: paging 0.4s linear infinite;
+    transform-origin: left;
+  }
+  .readmore-btn:hover {
+    background-color: rgb(159, 74, 255);
+  }
+  @keyframes paging {
+    0% {
+      transform: rotateY(0deg) skewY(0deg);
+    }
+    50% {
+      transform: rotateY(90deg) skewY(-20deg);
+    }
+    100% {
+      transform: rotateY(180deg) skewY(0deg);
+    }
+  }
+  .text {
+    width: 105px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    
+  }
+  .text a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+  }
+
+  .productCard {
+    width: 230px;
+    height: 254px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   }
+   
+   .card-img {
+    /* background-image: url("../img/1.webp"); */
+    background-color: #966a4c;
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+   }
+
+   .card-img img{
+    width: 100%;
+    height: 40%;
+   }
+   
+   .card-info {
+    padding-top: 10%;
+   }
+   
+   .card-button svg {
+    width: 20px;
+    height: 20px;
+   }
+   
+   .card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+   }
+   
+   .text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+   }
+   
+   /*Button*/
+   .card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+   }
+   
+   /*Hover*/
+   .card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+   
+   .card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: #ffcaa6;
+   }
+
+  /* ////////////////////////////////////////////////////////////////////////////////// */
+
+
+  
